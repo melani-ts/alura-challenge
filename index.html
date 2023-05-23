@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+   <title>Encriptador de texto</title>
+</head>
+
+<body>
+
+   <header class="logo">
+      <img class="img" src="Logo.png" alt="Logo Alura">
+   </header>
+
+   <main>
+
+      <section class="section_1">
+
+         <div>
+
+            <textarea id="texto_desencriptado" placeholder="Ingrese el texto aquí"
+               oninput="soloMinusculas()"></textarea>
+
+         </div>
+
+         <div class="parrafo">
+
+            <p><img class="img2" src="bi_exclamation-circle-fill.png">Solo letras minúsculas y sin acentos</p>
+
+         </div>
+
+         <div class="botones">
+
+            <button class="btn1" onclick="mostrarResultado()">Encriptar</button>
+            <button class="btn2" onclick="mostrarResultado()">Desencriptar</button>
+
+         </div>
+
+
+      </section>
+
+      <section class="section_2">
+         <textarea id="texto_encriptado" readonly>
+         </textarea>
+         <div class="spans">
+            <span class="span_1">Ningún mensaje fue encontrado</span><br>
+            <span class="span_2">Ingrese el texto que desees encriptar o desencriptar.</span>
+         </div>
+         <button class="btn3">Copiar</button>
+
+      </section>
+   </main>
+
+   <footer>
+
+      <div class="contacto">
+         <p>Contacto</p>
+      </div>
+
+      <div class="redes">
+         <a href="https://www.linkedin.com/in/melani-tirado/" target="_blank"><img src="linkedIn.png"
+               class="linkedIn"></a>
+         <a href="https://github.com/melani-ts" target="_blank"><img src="github.jpeg" class="github"></a>
+      </div>
+
+   </footer>
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>
